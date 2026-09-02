@@ -1,11 +1,12 @@
+/* ===== Base ===== */
 body {
   margin: 0;
-  background: #000;
-  color: #fff;
+  background: #f4f4f2;
+  color: #1a1a1a;
   font-family: Georgia, 'Times New Roman', serif;
 }
 
-/* Header */
+/* ===== Header ===== */
 header {
   display: flex;
   justify-content: space-between;
@@ -18,7 +19,7 @@ header {
   font-size: 1.8rem;
 }
 nav a {
-  color: #fff;
+  color: #1a1a1a;
   text-decoration: none;
   margin-left: 24px;
   font-size: 0.95rem;
@@ -27,7 +28,7 @@ nav a:hover {
   text-decoration: underline;
 }
 
-/* Intro */
+/* ===== Intro (homepage) ===== */
 .intro {
   text-align: center;
   max-width: 900px;
@@ -45,7 +46,7 @@ nav a:hover {
   margin-top: 30px;
 }
 
-/* Grid */
+/* ===== Image grid (homepage) ===== */
 .grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -72,6 +73,7 @@ nav a:hover {
   right: 0;
   transform: translateY(-50%);
   text-align: center;
+  color: #fff;                 /* stays white — sits over darkened image */
   font-size: 1.6rem;
   opacity: 0;
   transition: opacity 0.4s ease;
@@ -90,7 +92,7 @@ nav a:hover {
   .grid { grid-template-columns: 1fr; }
 }
 
-/* Theme pages */
+/* ===== Theme pages (vertical photo stack) ===== */
 .theme {
   max-width: 800px;
   margin: 0 auto;
@@ -107,14 +109,20 @@ nav a:hover {
   display: block;
   margin: 0 auto 24px;
 }
+
+/* ===== Back link (shared) ===== */
 .back {
-  color: #fff;
+  color: #1a1a1a;
   text-decoration: none;
   font-size: 0.95rem;
-  border-bottom: 1px solid #fff;
+  border-bottom: 1px solid #1a1a1a;
+}
+.back-wrap {
+  text-align: center;
+  margin-top: 50px;
 }
 
-/* CV page */
+/* ===== CV page ===== */
 .cv {
   max-width: 1000px;
   margin: 0 auto;
@@ -150,15 +158,14 @@ nav a:hover {
   margin: 0 0 10px;
 }
 .cv a {
-  color: #fff;
+  color: #1a1a1a;
 }
 .cv-publications {
-  border-top: 1px solid #333;
+  border-top: 1px solid #ccc;
   padding-top: 40px;
 }
-.back-wrap {
-  text-align: center;
-  margin-top: 50px;
+.note {
+  color: #b23;
 }
 @media (max-width: 600px) {
   .cv-columns { grid-template-columns: 1fr; gap: 30px; }
