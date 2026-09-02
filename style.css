@@ -200,9 +200,9 @@ nav a:hover {
   align-items: center;
 }
 .bio-photo {
-  width: 260px;
-  height: 260px;
-  object-fit: cover;
+  width: auto;
+  height: auto;
+  object-fit: contain;
   border-radius: 4px;
   flex-shrink: 0;
 }
