@@ -217,7 +217,7 @@ nav a:hover {
 
 /* ===== CV banner (thin hero) ===== */
 .cv-banner {
-  background-image: url('images/cv/banner.jpg');
+  background-image: url('images/home/hero.jpg');
   background-size: cover;
   background-position: center;
   min-height: 220px;
