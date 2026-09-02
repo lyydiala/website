@@ -1,0 +1,115 @@
+body {
+  margin: 0;
+  background: #000;
+  color: #fff;
+  font-family: Georgia, 'Times New Roman', serif;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 40px;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+.site-title {
+  font-size: 1.8rem;
+}
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 24px;
+  font-size: 0.95rem;
+}
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Intro */
+.intro {
+  text-align: center;
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 0 20px;
+}
+.intro h1 {
+  font-weight: normal;
+  font-size: 2.2rem;
+  line-height: 1.3;
+}
+.subtitle {
+  font-weight: bold;
+  font-size: 0.95rem;
+  margin-top: 30px;
+}
+
+/* Grid */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  padding: 0 16px 40px;
+}
+.tile {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  aspect-ratio: 1 / 1;
+}
+.tile img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: filter 0.4s ease;
+}
+.tile .title {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  transform: translateY(-50%);
+  text-align: center;
+  font-size: 1.6rem;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  pointer-events: none;
+  padding: 0 10px;
+}
+.tile:hover img { filter: brightness(0.4); }
+.tile:hover .title { opacity: 1; }
+
+/* Phones: no hover, so darken slightly and always show the title */
+@media (hover: none) {
+  .tile img { filter: brightness(0.55); }
+  .tile .title { opacity: 1; }
+}
+@media (max-width: 600px) {
+  .grid { grid-template-columns: 1fr; }
+}
+
+/* Theme pages */
+.theme {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px 20px 80px;
+  text-align: center;
+}
+.theme h1 {
+  font-weight: normal;
+  font-size: 2.4rem;
+  margin-bottom: 40px;
+}
+.theme img {
+  width: 100%;
+  display: block;
+  margin: 0 auto 24px;
+}
+.back {
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.95rem;
+  border-bottom: 1px solid #fff;
+}
