@@ -113,3 +113,53 @@ nav a:hover {
   font-size: 0.95rem;
   border-bottom: 1px solid #fff;
 }
+
+/* CV page */
+.cv {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 40px 20px 80px;
+}
+.cv-page-title {
+  text-align: center;
+  font-weight: normal;
+  font-size: 3rem;
+  margin-bottom: 50px;
+}
+.cv-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  margin-bottom: 60px;
+}
+.cv h2 {
+  text-align: center;
+  font-weight: normal;
+  font-size: 1.8rem;
+  margin-bottom: 30px;
+}
+.cv h3 {
+  text-align: center;
+  font-size: 1.1rem;
+  margin: 28px 0 10px;
+}
+.cv p {
+  text-align: center;
+  line-height: 1.6;
+  font-size: 0.98rem;
+  margin: 0 0 10px;
+}
+.cv a {
+  color: #fff;
+}
+.cv-publications {
+  border-top: 1px solid #333;
+  padding-top: 40px;
+}
+.back-wrap {
+  text-align: center;
+  margin-top: 50px;
+}
+@media (max-width: 600px) {
+  .cv-columns { grid-template-columns: 1fr; gap: 30px; }
+}
