@@ -200,7 +200,7 @@ nav a:hover {
   align-items: center;
 }
 .bio-photo {
-  width: 350px;
+  width: 500px;
   height: auto;
   object-fit: contain;
   border-radius: 4px;
