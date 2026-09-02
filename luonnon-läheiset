@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Luonnon-läheiset — Lyydia Alajääskö</title>
+  <title>Luonnon Läheiset — Lyydia Alajääskö</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -18,7 +18,7 @@
   </header>
 
   <section class="theme">
-    <h1>Luonnonläheiset</h1>
+    <h1>Luonnon Läheiset</h1>
     <h1>Those Near Nature</h1>
 
     <img src="images/hetta-pallas/img1.jpg" alt="">
