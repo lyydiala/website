@@ -214,3 +214,21 @@ nav a:hover {
   .bio { flex-direction: column; text-align: center; }
   .hero h1 { font-size: 2.4rem; }
 }
+
+/* ===== CV banner (thin hero) ===== */
+.cv-banner {
+  background-image: url('images/cv/banner.jpg');
+  background-size: cover;
+  background-position: center;
+  min-height: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cv-banner h1 {
+  color: #fff;
+  font-weight: normal;
+  font-size: 3rem;
+  text-shadow: 0 2px 12px rgba(0,0,0,0.5);
+  margin: 0;
+}
