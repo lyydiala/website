@@ -219,8 +219,8 @@ nav a:hover {
 .cv-banner {
   background-image: url('images/home/hero.jpg');
   background-size: cover;
-  background-position: center 70%;
-  min-height: 220px;
+  background-position: center 80%;
+  min-height: 230px;
   display: flex;
   align-items: center;
   justify-content: center;
