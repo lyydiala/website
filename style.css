@@ -16,7 +16,7 @@ header {
   gap: 12px;
 }
 .site-title {
-  font-size: 1.8rem;
+  font-size: 0.95rem;
 }
 nav a {
   color: #1a1a1a;
@@ -175,7 +175,7 @@ nav a:hover {
 .hero {
   background-image: url('images/home/hero.jpg');
   background-size: cover;
-  background-position: center;
+  background-position: center bottom;
   min-height: 60vh;
   display: flex;
   align-items: center;
